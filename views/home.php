@@ -72,7 +72,7 @@
             <div class="card btn-round ">
                 <!--Card image-->
                 <div class="view overlay hm-white-slight">
-                    <img src="/ticko/Controllers/uploads/<%= this.e_image %>" class="img-fluid" alt="">
+                    <img src="/ticko/Controllers/uploads/<%= this.e_image %>" class="img-fluid" style="height: 280px !important;" alt="">
                     <a onclick="getSingleEvent('<%= this.event_id %>')">
                         <div class="mask waves-effect waves-light"></div>
                     </a>
@@ -112,12 +112,15 @@
             <div class="card btn-round ">
                 <!--Card image-->
                 <div class="view overlay hm-white-slight">
-                    <img src="/ticko/Controllers/uploads/<%= this.e_image %>" class="img-fluid" height="300px" alt="">
+                    <img src="/ticko/Controllers/uploads/<%= this.e_image %>"  style="height: 280px !important;"  alt="">
                     <a onclick="getSingleEvent('<%= this.event_id %>')">
                         <div class="mask waves-effect waves-light"></div>
                     </a>
                 </div>
                 <!--/.Card image-->
+
+
+
 
                 <!--Card content-->
                 <div class="card-block">

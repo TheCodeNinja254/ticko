@@ -15,6 +15,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta property="og:url"           content="https://sajoytownsecodary.org/ticko/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="TICKO&trade;" />
+    <meta property="og:description"   content="The Event system that gets things done." />
+    <meta property="og:image"          content="https://sajoytownsecodary.org/ticko/assets/img/favicon.ico" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <title>Stealth</title>

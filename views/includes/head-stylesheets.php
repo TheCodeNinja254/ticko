@@ -12,9 +12,14 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#6d4c41">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta property="og:url"           content="https://sajoytownsecondary.org/ticko/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="TICKO &trade;" />
+    <meta property="og:description"   content="The Event system that gets shit done." />
+    <meta property="og:image"         content="https://sajoytownsecondary.org/ticko/assets/img/favicon.ico" />
     <link rel="icon" sizes="192x192" href="/ticko/assets/img/favicon.ico">
 
     <!-- reuse same icon for Safari -->
