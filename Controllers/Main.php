@@ -645,7 +645,7 @@ class EventPoint{
 
 
 
-        $SQL = "SELECT * FROM `events`,`organizers` WHERE events.o_username = organizers.o_username";
+        $SQL = "SELECT * FROM `events`,`organizers` WHERE events.o_username = organizers.o_username ORDER BY  events.event_id DESC";
         $result = $MySQLiconn -> query($SQL);
 
         $count = mysqli_num_rows($result);
@@ -1768,33 +1768,44 @@ class EventPoint{
     }
 
     public function sendMail(){
-        require 'PHPMailer/PHPMailerAutoload.php';
+        require 'jayMailer/PHPMailerAutoload.php';
 
-//Create a new PHPMailer instance
-        $mail = new PHPMailer();
-//Set who the message is to be sent from
-//IMPORTANT: This must match the email address of your certificate.
-//Although the certificate will be valid, an error will be thrown since it cannot be verified that the sender and the signer are the same person.
-        $mail->setFrom('from@example.com', 'First Last');
-//Set an alternative reply-to address
-        $mail->addReplyTo('replyto@example.com', 'First Last');
-//Set who the message is to be sent to
-        $mail->addAddress('whoto@example.com', 'John Doe');
-//Set the subject line
-        $mail->Subject = 'PHPMailer mail() test';
-//Read an HTML message body from an external file, convert referenced images to embedded,
-//Convert HTML into a basic plain-text alternative body
-        $mail->msgHTML(file_get_contents('PHPMailer/index.html'), dirname(__FILE__));
-//Replace the plain text body with one created manually
+        $jsonData = array();
+        $name = "Fredrick Mwangi";
+        $to = "grimlisby.254@gmail.com";
+        $subject = "Test";
+
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->SingleTo = true;
+        $mail->SMTPDebug = 0;
+        $mail->Debugoutput = 'html';
+        $mail->Host = "mail.sajoytownsecondary.org";
+        $mail->Port = 465;
+        $mail->SMTPAuth = true;
+        $mail->Username = "ticko@sajoytownsecondary.org";
+        $mail->Password = "ticko2017";
+        $mail->setFrom('ticko@sajoytownsecondary.org', 'TICKO SYSTEM');
+        $mail->addReplyTo('ticko@sajoytownsecondary.org', 'TICKO SYSTEM');
+        $mail->addAddress($to, $name);
+        $mail->Subject = $subject;
+        $mail->msgHTML(file_get_contents('jayMailer/index.html'), dirname(__FILE__));
         $mail->AltBody = 'This is a plain-text message body';
 
-//Send the message, check for errors
         if (!$mail->send()) {
-            echo "Mailer Error: " . $mail->ErrorInfo;
+
+//        echo "Mailer Error: " . $mail->ErrorInfo;
+//            return false;
+
+            $jsonData["data"] = array("error" => $mail->ErrorInfo, "response" => false);
         } else {
 
-            echo "Message sent!";
+//        echo "Message sent!";
+//            return true;
+            $jsonData["data"] = array("response" => true);
+
         }
+        echo json_encode($jsonData);
     }
 
 }

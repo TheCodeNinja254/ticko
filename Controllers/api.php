@@ -432,3 +432,8 @@ if($method === 'updateAdminPassword'){
 
     $ticko -> updateAdminPassword($MySQLiconn, $ad_current_password, $ad_password);
 }
+
+if($method === 'sendMail'){
+
+    $ticko -> sendMail();
+}

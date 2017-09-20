@@ -112,7 +112,7 @@
             <div class="card btn-round ">
                 <!--Card image-->
                 <div class="view overlay hm-white-slight">
-                    <img src="/ticko/Controllers/uploads/<%= this.e_image %>" class="img-fluid" alt="">
+                    <img src="/ticko/Controllers/uploads/<%= this.e_image %>" class="img-fluid" height="300px" alt="">
                     <a onclick="getSingleEvent('<%= this.event_id %>')">
                         <div class="mask waves-effect waves-light"></div>
                     </a>
