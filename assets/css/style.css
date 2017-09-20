@@ -1,0 +1,337 @@
+html,
+body,
+.view {
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+}
+html,
+body{
+   background: #e8e3e3;
+}
+
+/* Navigation*/
+h1, h2{
+    margin-top: 10px !important;
+    margin-bottom: 13px!important;
+}
+.h2-responsive{
+    margin-top: -2px !important;
+    margin-bottom: -2px!important;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.scrolling-navbar {
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+.navbar-brand{
+    color: #000000;
+}
+.top-nav-collapse {
+    background-color: #fff;
+}
+.top-nav-collapse a{
+    color: #000 !important;
+}
+
+
+
+footer.page-footer {
+    background-image: url("../img/animal.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 2rem;
+    color: #000000;
+}
+footer.page-footer a{
+    color: #000;
+}
+footer i{
+    color: #e91818 !important; ;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #6d4c41;
+    }
+    .top-nav-collapse {
+        background-color: #6d4c41;
+    }
+    .top-nav-collapse a{
+        color: #fff !important;
+    }
+    nav ul a{
+        color: #fff;
+    }
+
+}
+/*Call to action*/
+
+.flex-center {
+    color: #fff;
+}
+
+.view {
+    height: 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*Contact section*/
+
+#contact .fa {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1C2331;
+}
+nav ul li.active {
+    color: #e91818 !important; ;
+}
+
+nav ul a {
+    transition: background-color .3s;
+    font-size: 0.9rem;
+    color: #000 ;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+}
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #e91818 !important; ;
+    border-bottom: 1px solid #e91818 ;
+    transition: font-weight .20s ease;
+    transition: background-color .20s ease;
+    transition: border-bottom .20s ease;
+}
+.intro_hey{
+    background: url("../img/top-intro3.png")no-repeat center fixed !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+
+.text-red{
+    color:#e91818;
+}
+.red{
+    background: #e91818;
+}
+.warning-text{
+    color: #ffbb33;
+}
+.text-white{
+    color: #fff;
+}
+.white{
+    background: #fff;
+}
+.text-black{
+    color: #000000;
+}
+.black_leather{
+    background-image: url("../img/main/black leather.jpg");
+}
+.footer-copyright a{
+    font-weight: normal;
+    font-size: inherit;
+}
+
+td img{
+    height: 50px;
+    width: 50px;
+}
+
+form ul li{
+    display: inline-block;
+}
+.order {
+    width: auto;
+    height: 25px;
+    text-align: center;
+    font-size: large;
+}
+
+input[type="text"] {
+    color: #263238 ;
+}
+input[type="email"] {
+    color: #263238 ;
+}
+input[type="password"] {
+    color: #263238 ;
+}
+input[placeholder]{
+    color: #263238 ;
+}
+input[type='text']::-webkit-input-placeholder {
+    color: #263238;
+}
+
+input[type='text']:-moz-placeholder { /* Firefox 18- */
+    color: #263238;
+}
+
+input[type='text']::-moz-placeholder {  /* Firefox 19+ */
+    color: #263238;
+}
+input[placeholder]{
+    color: #263238 ;
+}
+input[type='password']::-webkit-input-placeholder {
+    color: #263238;
+}
+
+input[type='password']:-moz-placeholder { /* Firefox 18- */
+    color: #263238;
+}
+
+input[type='password']::-moz-placeholder {  /* Firefox 19+ */
+    color: #263238;
+}
+input[type='email']::-webkit-input-placeholder {
+    color: #263238;
+}
+
+input[type='email']:-moz-placeholder { /* Firefox 18- */
+    color: #263238;
+}
+
+input[type='email']::-moz-placeholder {  /* Firefox 19+ */
+    color: #263238;
+}
+:-ms-input-placeholder {
+    color: #263238;
+}
+textarea::-webkit-input-placeholder {
+    color: #263238;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: #263238;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: #263238;
+}
+:-ms-input-placeholder {
+    color: #263238;
+}
+.measurements i{
+    font-size: 4px;
+}
+select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+
+    background: #f8f8f8;
+    color:#000;
+    font-family: Quicksand, sans-serif;
+    font-size: 1rem;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    width: 300px;
+    height: 40px;
+}
+#opt{
+    color:#000;
+    font-family: Quicksand, sans-serif;
+    font-size: 1rem;
+    background: #000;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+.select1 {position:relative}
+.select1:after {
+    content:'<>';
+    font-family: Quicksand;
+    color:#000;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 2px;
+    margin-top: 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+.select1:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+hr.style-eight { padding: 0; border: none; border-top: medium double #333; color: #333; text-align: center; } hr.style-eight:after { content: "§"; display: inline-block; position: relative; top: -0.7em; font-size: 1.5em; padding: 0 0.25em; background: white; }
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;

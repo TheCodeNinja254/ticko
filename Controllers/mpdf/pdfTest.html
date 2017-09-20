@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script> 
+$(function(){   
+   $('#fileContents').val(document.documentElement.innerHTML);
+   
+});
+</script>
+</head>
+
+<body>
+		<table>
+			<tr>
+				<th></th>
+				<th>9am</th>
+				<th>10am</th>
+				<th>11am</th>
+				<th>12am</th>
+			</tr>
+			<tr>
+				<th>Monday</th>
+				<td colspan="2">Geography</td>
+				<td>Math</td>
+				<td>Art</td>
+			</tr>
+			<tr>
+				<th>Tuesday</th>
+				<td colspan="3">Gym</td>
+				<td>Home Ec</td>
+			</tr>
+		</table>
+        
+        <form action="download.php" method="post">
+        
+                <div style="display:none;" >
+                  <input type="text" name="fileContents" id="fileContents" value=''/>
+                  <input type="text" name="fileName" id="fileName" value='mySitePage.pdf'/>
+                  <input type="text" name="css" value='style.css'/>
+                  
+                </div>
+                <input type="submit" id="createPdf" value="Download PDF"/>
+       </form> 
+	</body>
+</html>
+
+              

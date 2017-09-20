@@ -1,0 +1,9 @@
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    .mobi-navs{
+        visibility: hidden;
+    }
+    .mobi{
+        visibility: visible;
+    }
+}

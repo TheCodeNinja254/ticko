@@ -1,0 +1,6 @@
+DirectoryIndex webhp.php
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /ticko/webhp.php?path=$1 [NC,L,QSA]

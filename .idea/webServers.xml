@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5f6b5098-960b-4a32-9895-c4084e5f0a6b" name="sajoytownsecondary.org" url="https://sajoytownsecndary.org">
+        <fileTransfer host="sajoytownsecondary.org" port="21" password="dfe0dffedff9dff9dfdddfcfdfc8dfeadf98df9adf9bdf9d" username="sajoytow">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

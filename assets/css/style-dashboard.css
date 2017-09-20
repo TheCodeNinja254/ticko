@@ -1,0 +1,102 @@
+input[type="text"] {
+    color: #263238;
+}
+input[type="email"] {
+    color: #263238;
+}
+input[type="password"] {
+    color: #263238;
+}
+input[placeholder]{
+    color: #263238;
+}
+.mpesa input[type='text']::-webkit-input-placeholder {
+    color: #263;
+    font-weight: bold;
+}
+
+.mpesa input[type='text']:-moz-placeholder { /* Firefox 18- */
+    color: #263;
+    font-weight: bold;
+}
+
+.mpesa input[type='text']::-moz-placeholder {  /* Firefox 19+ */
+    color: #263;
+    font-weight: bold;
+}
+input[type='text']::-webkit-input-placeholder {
+    color: #263238;
+}
+
+input[type='text']:-moz-placeholder { /* Firefox 18- */
+    color: #263238;
+}
+
+input[type='text']::-moz-placeholder {  /* Firefox 19+ */
+    color: #263238;
+}
+input[placeholder]{
+    color: #263238;
+}
+input[type='password']::-webkit-input-placeholder {
+    color: #263238;
+}
+
+input[type='password']:-moz-placeholder { /* Firefox 18- */
+    color: #263238;
+}
+
+input[type='password']::-moz-placeholder {  /* Firefox 19+ */
+    color: #263238;
+}
+input[type='email']::-webkit-input-placeholder {
+    color: #263238;
+}
+
+input[type='email']:-moz-placeholder { /* Firefox 18- */
+    color: #263238;
+}
+
+input[type='email']::-moz-placeholder {  /* Firefox 19+ */
+    color: #263238;
+}
+input[type='number']::-webkit-input-placeholder {
+    color: #263238;
+}
+
+input[type='number']:-moz-placeholder { /* Firefox 18- */
+    color: #263238;
+}
+
+input[type='number']::-moz-placeholder {  /* Firefox 19+ */
+    color: #263238;
+}
+textarea::-webkit-input-placeholder {
+    color: #263238;
+}
+
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: #263238;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: #263238;
+}
+select::-webkit-input-placeholder{
+    color: #263238;
+}
+select::-moz-placeholder{
+    color: #263238;
+}
+select:-moz-placeholder{
+    color: #263238;
+}
+.e-payment p{
+    display: inline;
+}
+.btn-round{
+    border-radius: 24px;
+}
+.text-bold{
+    font-weight: bold !important;
+}
